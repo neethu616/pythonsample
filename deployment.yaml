@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: pythonsample
   labels:
-    app: nginx
+    app: pythonsample
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: pythonsample
   template:
     metadata:
       labels:
-        app: nginx
+        app: pythonsample
     spec:
       containers:
-      - name: nginx
+      - name: pythonsample
         image:nee1234/samplepython:v2
         ports:
         - containerPort: 8080
