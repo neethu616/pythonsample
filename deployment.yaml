@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pythonsample
-        image:nee1234/samplepython:v2
+        image: nee1234/samplepython:v2
         ports:
         - containerPort: 8080
