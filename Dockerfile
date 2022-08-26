@@ -2,7 +2,7 @@ FROM python
 
 RUN pip install Flask jsonify
 
-RUN https://github.com/neethu616/pythonsample.git
+RUN git clone https://github.com/neethu616/pythonsample.git
 
 WORKDIR greetapi
 
