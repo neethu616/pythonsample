@@ -1,8 +1,9 @@
-FROM python:3.8-slim-buster
-WORKDIR /python-docker
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-COPY src src
-EXPOSE 8080
-ENV FLASK_APP ./src/app.py
-ENTRYPOINT ["python", "-m", "flask", "run", "--host=0.0.0.0"]
+FROM python
+
+RUN pip install Flask jsonify
+
+RUN git clone https://github.com
+
+WORKDIR greetapi
+
+CMD ["python","./app.py"]
